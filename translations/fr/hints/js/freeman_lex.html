@@ -1,0 +1,76 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Je n'ai aucune idée de la manière de commencer à résoudre cette mission.
+    </div>
+    <div class="answer">
+        <p>
+            Attrapez une idée 💡! La solution est très simple: il vous suffit de trouver le résultat de la division par le sol du dividende (<b class="code">n</b>) et du diviseur (<b class="code">k</b>).
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, par quoi dois-je commencer?
+    </div>
+    <div class="answer">
+        <p>
+            Lisez la méthode <a target="_blank" href="https://www.w3schools.com/jsref/jsref_floor.asp">floor division</a> et utilisez-la!
+        </p>
+        <pre class="brush: javascript">
+Math.floor(n / k)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Alors, à quoi devrait ressembler ma solution finale?
+    </div>
+    <div class="answer">
+        <p>
+            Il vous suffit de renvoyer le résultat de l'expression et d'envelopper votre code dans une expression de fonction. Il est fortement recommandé d'utiliser des indications de type pour les données d'entrée et de sortie.
+        </p>
+        <p>Voici la solution complète:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function countDivisible(n: number, k: number): number {
+
+    return Math.floor(n / k)
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Montrez-moi d'autres solutions!<br />
+        parce que je veux être un vrai 🥇 Javascript Hero!
+    </div>
+    <div class="answer">
+        <p>Bien sûr, prenez-le!</p>
+        <p>
+            Itérer sur la plage de <b class="code">k</b> à <b class="code">n</b> avec un pas de <b class="code">k</b> et incrémenter un compteur prédéfini.  
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function countDivisible(n: number, k: number): number {
+
+    let count = 0;
+    for (let i=k; i < n + 1; i+=k) count += 1;
+    
+    return count;
+}
+        </pre>
+        </div>
+        <p>Cliquez sur <b>Best Solutions</b> dans le menu mission et découvrez de nombreuses autres solutions intéressantes!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Merci beaucoup! Je sais et je comprends mieux maintenant! Tout fonctionne bien!
+    </div>
+    <div class="answer">
+        Heureux de l'apprendre 👍!
+    </div>
+</div>
+</body>
