@@ -1,0 +1,79 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Nie mam pojęcia, jak zacząć rozwiązywać tę misję.
+    </div>
+    <div class="answer">
+        <p>
+            Proszę złapać pomysł 💡! Rozwiązanie jest bardzo proste: wystarczy znaleźć wynik dzielenia podłogowego dywidendy (<b class="code">n</b>) i dzielnika (<b class="code">k</b>).
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, od czego powinienem zacząć?
+    </div>
+    <div class="answer">
+        <p>
+            Proszę poczytać o operatorze <a target="_blank" href="https://www.learndatasci.com/solutions/python-double-slash-operator-floor-division/">floor division</a> i korzystać z niego!
+        </p>
+        <pre class="brush: python">
+n // k
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Jak więc powinno wyglądać moje ostateczne rozwiązanie?
+    </div>
+    <div class="answer">
+        <p>
+            Wystarczy zwrócić wynik wyrażenia i zawinąć kod w wyrażenie funkcyjne. Używanie podpowiedzi typu dla danych wejściowych i wyjściowych jest wysoce zalecane.
+        </p>
+        <p>Poniżej znajduje się całe rozwiązanie:</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def count_divisible(n: int, k: int) -> int:
+
+    return n // k
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Proszę pokazać mi więcej rozwiązań!<br />
+        bo chcę być prawdziwą 🥇 Python Ninnjaa!
+    </div>
+    <div class="answer">
+        <p>Jasne, proszę łapać!</p>
+        <p>
+            Proszę zbudować zakres liczb całkowitych od <b class="code">k</b> do <b class="code">n</b>, w tym ponad <b class="code">k</b> krok i znaleźć długość tego zakresu (liczbę elementów w nim). 
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def count_divisible(n: int, k: int) -> int:
+
+    return len(range(k, n+1, k))
+        </pre>
+        </div>
+        <p>
+            Proszę zaimportować określoną funkcję z modułu standardowego.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+from operator import floordiv as count_divisible
+        </pre>
+        </div>
+        <p>Proszę kliknąć <b>Best Solutions</b> w menu misji i zobaczyć wiele innych ciekawych rozwiązań!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Dzięki! Teraz wiem i rozumiem więcej! Wszystko działa jak należy!
+    </div>
+    <div class="answer">
+        Miło mi to słyszeć 👍!
+    </div>
+</div>
+</body>
