@@ -1,0 +1,79 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        我不知道如何开始解决这个任务。
+    </div>
+    <div class="answer">
+        <p>
+            请给我出个主意💡！解题非常简单：只需求出红利 (<b class="code">n</b>) 和除数 (<b class="code">k</b>) 的底除法的结果。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        好吧，我应该从哪里开始呢？
+    </div>
+    <div class="answer">
+        <p>
+            阅读<a target="_blank" href="https://www.learndatasci.com/solutions/python-double-slash-operator-floor-division/">floor division</a> 运算符并使用它！
+        </p>
+        <pre class="brush: python">
+n // k
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        那么，我的最终解决方案应该是怎样的呢？
+    </div>
+    <div class="answer">
+        <p>
+            你只需返回表达式的结果，并将代码封装成函数表达式。强烈建议对输入和输出数据使用类型提示。
+        </p>
+        <p>以下是整个解决方案：</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def count_divisible(n: int, k: int) -> int:
+
+    return n // k
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        告诉我更多解决方案！<br />
+        因为我想成为一个真正的 🥇 Python Ninnjaa！
+    </div>
+    <div class="answer">
+        <p>当然，抓紧时间！</p>
+        <p>
+            建立一个从<b class="code">k</b> 到<b class="code">n</b> 的整数范围，包括超过<b class="code">k</b> 的步长，并找出这个范围的长度（其中的元素个数）。 
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def count_divisible(n: int, k: int) -> int:
+
+    return len(range(k, n+1, k))
+        </pre>
+        </div>
+        <p>
+            从标准模块导入特定函数。
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+from operator import floordiv as count_divisible
+        </pre>
+        </div>
+        <p>点击任务菜单中的<b>Best Solutions</b> ，查看许多其他有趣的解决方案！</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        谢谢！我现在知道并理解得更多了！一切正常！
+    </div>
+    <div class="answer">
+        很高兴听到这个消息 👍！
+    </div>
+</div>
+</body>
