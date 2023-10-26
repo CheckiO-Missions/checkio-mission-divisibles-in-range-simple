@@ -1,0 +1,76 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        我不知道如何开始解决这个任务。
+    </div>
+    <div class="answer">
+        <p>
+            请给我出个主意💡！解题非常简单：只需求出红利 (<b class="code">n</b>) 和除数 (<b class="code">k</b>) 的底式除法的结果。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        好吧，我应该从哪里开始呢？
+    </div>
+    <div class="answer">
+        <p>
+            阅读<a target="_blank" href="https://www.w3schools.com/jsref/jsref_floor.asp">floor division</a> 方法并使用它！
+        </p>
+        <pre class="brush: javascript">
+Math.floor(n / k)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        那么，我的最终解决方案应该是怎样的呢？
+    </div>
+    <div class="answer">
+        <p>
+            您只需返回表达式的结果，并将代码封装成函数表达式即可。强烈建议对输入和输出数据使用类型提示。
+        </p>
+        <p>以下是整个解决方案：</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function countDivisible(n: number, k: number): number {
+
+    return Math.floor(n / k)
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        告诉我更多解决方案！<br />
+        因为我想成为真正的 🥇 Javascript 英雄！
+    </div>
+    <div class="answer">
+        <p>当然，抓紧时间！</p>
+        <p>
+            在<b class="code">k</b> 至<b class="code">n</b> 的范围内迭代，步长为<b class="code">k</b> ，并递增一个预定义的计数器。  
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function countDivisible(n: number, k: number): number {
+
+    let count = 0;
+    for (let i=k; i < n + 1; i+=k) count += 1;
+    
+    return count;
+}
+        </pre>
+        </div>
+        <p>点击任务菜单<b>Best Solutions</b> ，查看更多有趣的解决方案！</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        谢谢！我现在知道并理解得更多了！一切正常！
+    </div>
+    <div class="answer">
+        很高兴听到这个消息 👍！
+    </div>
+</div>
+</body>
