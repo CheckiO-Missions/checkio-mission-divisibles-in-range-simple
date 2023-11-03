@@ -1,0 +1,41 @@
+<!-- Describe task in general -->
+
+<p>
+    Bei zwei ganzen Zahlen, <code>n</code> und <code>k</code>, besteht die Aufgabe darin, zu zählen, wie viele Zahlen zwischen 1 und <code>n</code> (einschließlich) durch <code>k</code> teilbar sind.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}count-divisibles.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zwei ganze Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Ganzzahl <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>Wie sie verwendet wird:</strong>
+    <i>diese Funktion kann bei zahlentheoretischen Problemen, statistischen Berechnungen und verschiedenen anderen mathematischen und praktischen Szenarien nützlich sein, in denen eine solche Zählung benötigt wird.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingung:</strong>
+    <ul>
+    <li><i>1 &lt;= k &lt;= n &lt;=<sup>109</sup></i>.</li>
+    </ul>
+</p>
