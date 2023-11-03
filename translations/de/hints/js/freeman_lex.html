@@ -1,0 +1,76 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung, wie ich mit der Lösung dieser Aufgabe beginnen soll.
+    </div>
+    <div class="answer">
+        <p>
+            Fangen Sie eine Idee 💡! Die Lösung ist ganz einfach: Sie müssen nur das Ergebnis der Bodenteilung von Dividende (<b class="code">n</b>) und Teiler (<b class="code">k</b>) finden.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, womit soll ich anfangen?
+    </div>
+    <div class="answer">
+        <p>
+            Lesen Sie über die Methode <a target="_blank" href="https://www.w3schools.com/jsref/jsref_floor.asp">floor division</a> und wenden Sie sie an!
+        </p>
+        <pre class="brush: javascript">
+Math.floor(n / k)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Wie sollte also meine endgültige Lösung aussehen?
+    </div>
+    <div class="answer">
+        <p>
+            Sie müssen nur das Ergebnis des Ausdrucks zurückgeben und Ihren Code in einen Funktionsausdruck verpacken. Die Verwendung von Typ-Hinweisen für Eingabe- und Ausgabedaten wird dringend empfohlen.
+        </p>
+        <p>Hier ist die gesamte Lösung:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function countDivisible(n: number, k: number): number {
+
+    return Math.floor(n / k)
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Zeigen Sie mir mehr Lösungen!<br />
+        denn ich möchte ein echter 🥇 Javascript-Held sein!
+    </div>
+    <div class="answer">
+        <p>Klar, schnappen Sie es sich!</p>
+        <p>
+            Iterieren Sie über den Bereich von <b class="code">k</b> bis <b class="code">n</b> mit einem Schritt von <b class="code">k</b> und erhöhen Sie einen vordefinierten Zähler.  
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function countDivisible(n: number, k: number): number {
+
+    let count = 0;
+    for (let i=k; i < n + 1; i+=k) count += 1;
+    
+    return count;
+}
+        </pre>
+        </div>
+        <p>Klicken Sie im Missionsmenü auf <b>Best Solutions</b> und sehen Sie sich viele andere interessante Lösungen an!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Vielen Dank! Ich weiß und verstehe jetzt mehr! Alles funktioniert bestens!
+    </div>
+    <div class="answer">
+        Freut mich zu hören 👍!
+    </div>
+</div>
+</body>

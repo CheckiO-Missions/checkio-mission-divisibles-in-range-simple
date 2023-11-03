@@ -1,0 +1,79 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung, wie ich mit der Lösung dieser Aufgabe beginnen soll.
+    </div>
+    <div class="answer">
+        <p>
+            Fangen Sie eine Idee 💡! Die Lösung ist ganz einfach: Sie müssen nur das Ergebnis der Bodenteilung von Dividende (<b class="code">n</b>) und Teiler (<b class="code">k</b>) finden.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, womit soll ich anfangen?
+    </div>
+    <div class="answer">
+        <p>
+            Lesen Sie über <a target="_blank" href="https://www.learndatasci.com/solutions/python-double-slash-operator-floor-division/">floor division</a> operator und nutzen Sie es!
+        </p>
+        <pre class="brush: python">
+n // k
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Wie sollte also meine endgültige Lösung aussehen?
+    </div>
+    <div class="answer">
+        <p>
+            Sie müssen nur das Ergebnis des Ausdrucks zurückgeben und Ihren Code in einen Funktionsausdruck verpacken. Die Verwendung von Typ-Hinweisen für Eingabe- und Ausgabedaten wird dringend empfohlen.
+        </p>
+        <p>Hier ist die gesamte Lösung:</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def count_divisible(n: int, k: int) -> int:
+
+    return n // k
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Zeigen Sie mir mehr Lösungen!<br />
+        denn ich will ein echter 🥇 Python Ninnjaa sein!
+    </div>
+    <div class="answer">
+        <p>Klar, schnapp sie dir!</p>
+        <p>
+            Bilden Sie einen Bereich von ganzen Zahlen von <b class="code">k</b> bis <b class="code">n</b> einschließlich über <b class="code">k</b> Schritt und finden Sie die Länge dieses Bereichs (Anzahl der Elemente darin). 
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def count_divisible(n: int, k: int) -> int:
+
+    return len(range(k, n+1, k))
+        </pre>
+        </div>
+        <p>
+            Importieren Sie eine bestimmte Funktion aus dem Standardmodul.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+from operator import floordiv as count_divisible
+        </pre>
+        </div>
+        <p>Klicken Sie auf <b>Best Solutions</b> im Missionsmenü und sehen Sie sich viele andere interessante Lösungen an!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Danke! Ich weiß und verstehe jetzt mehr! Alles funktioniert bestens!
+    </div>
+    <div class="answer">
+        Freut mich zu hören 👍!
+    </div>
+</div>
+</body>
